@@ -1,0 +1,49 @@
+html,
+body {
+  min-width: 320px;
+  font-family: $font-family-base;
+  font-size: $fsz-base;
+  font-weight: normal;
+  color: #000;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+* {
+  box-sizing: inherit;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  min-width: 320px;
+  max-width: $bp-xlarge;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 $indent;
+  @include clearfix;
+}
