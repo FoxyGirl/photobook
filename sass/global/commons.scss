@@ -23,6 +23,28 @@ img {
   height: auto;
 }
 
+h1 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-family: $font-family-base;
+  font-weight: 200;
+  font-size: 60px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &::first-letter {
+    font-size: 70px;
+  }
+
+  @include respond(tablet) {
+    font-size: 40px;
+  }
+
+  @include respond(mobile) {
+    font-size: 32px;
+  }
+}
+
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
 
@@ -45,5 +67,6 @@ img {
   position: relative;
   margin: 0 auto;
   padding: 0 $indent;
+  text-align: center;
   @include clearfix;
 }

@@ -5,8 +5,9 @@
   margin: 0 10px 20px;
   padding: 10px 40px;
   font-size: $fsz-btn;
-  font-weight: normal;
+  font-weight: 200;
   text-decoration: none;
+  text-transform: uppercase;
   color: #ffffff;
   background-color: $color-secondary;
   border: none;
@@ -19,5 +20,21 @@
 
   &:active {
     background-color: darken($color-secondary, 15%);
+  }
+
+  &--transparent {
+    color: #000;
+    background-color: transparent;
+    border: 1px solid #000;
+
+    &:hover {
+      color: #fff;
+      border-color: darken($color-secondary, 8%);
+    }
+
+    &:active {
+      color: #fff;
+      border-color: darken($color-secondary, 15%);
+    }
   }
 }
