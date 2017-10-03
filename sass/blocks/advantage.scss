@@ -1,0 +1,69 @@
+.advantage {
+  background-color: $color-bg;
+
+  .container {
+    padding: 30px 0 75px 0;
+  }
+
+  &__list {
+    @include ul-clear;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 55px 0 85px 0;
+
+    @media (max-width: 1007px) {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    flex-basis: 316px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+
+    @media (min-width: 711px) and (max-width: 1007px) {
+      margin-right: 20px;
+      margin-left: 20px;
+
+      &:last-child {
+        flex-basis: 45%;
+        flex-grow: 0;
+      }
+    }
+
+    @media (min-width: 420px) and (max-width: 711px) {
+      flex-basis: 65%;
+      flex-grow: 0;
+    }
+  }
+
+  &__image {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    background: #fff url("../img/advantage-social-media.png") center center no-repeat;
+    background-size: cover;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}

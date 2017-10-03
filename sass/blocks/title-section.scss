@@ -1,0 +1,21 @@
+.title-section {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-family: $font-family-base;
+  font-weight: 200;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &::first-letter {
+    font-size: 60px;
+  }
+
+  @include respond(tablet) {
+    font-size: 30px;
+  }
+
+  @include respond(mobile) {
+    font-size: 24px;
+  }
+}
