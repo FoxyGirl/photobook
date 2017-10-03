@@ -15,11 +15,11 @@
   outline: none;
 
   &:hover {
-    background-color: darken($color-secondary, 8%);
+    background-color: $color-btn-hover;
   }
 
   &:active {
-    background-color: darken($color-secondary, 15%);
+    background-color: $color-btn-active;
   }
 
   &--transparent {
@@ -29,12 +29,14 @@
 
     &:hover {
       color: #fff;
-      border-color: darken($color-secondary, 8%);
+      background-color: rgba($color-btn-hover, $opacity-btn);
+      border-color: transparent;
     }
 
     &:active {
       color: #fff;
-      border-color: darken($color-secondary, 15%);
+      background-color: rgba($color-btn-active, $opacity-btn);
+      border-color: transparent;
     }
   }
 }

@@ -1,0 +1,94 @@
+.steps {
+  background-color: #fff;
+
+  &__list {
+    @include ul-clear;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 55px 0 85px 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 80%;
+      height: 0;
+      top: 120px;
+      border-bottom: 3px dashed $color-main;
+
+      @media (max-width: 850px) {
+        height: 260px;
+        left: 18%;
+        border: 3px dashed #ffd200;
+        border-left: none;
+      }
+
+      @media (max-width: 440px) {
+        left: 50%;
+        width: 0;
+        height: 70%;
+        border-right: 3px dashed #ffd200;
+      }
+
+    }
+
+    &::after {
+      content: "";
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 350px;
+      width: 50%;
+      height: 50px;
+      background-color: #fff;
+
+      @media (min-width: 639px) and (max-width: 850px) {
+        display: block;
+      }
+    }
+  }
+
+  &__item {
+    flex-basis: 140px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    padding: 0 30px;
+    margin-bottom: 50px;
+
+    @media (min-width: 440px) and (max-width: 639px) {
+      &:nth-child(1) {
+        order: 1;
+      }
+
+      &:nth-child(2) {
+        order: 2;
+      }
+
+      &:nth-child(3) {
+        order: 4;
+      }
+
+      &:nth-child(4) {
+        order: 3;
+      }
+    }
+
+  }
+
+  &__image {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 20px;
+    border: 3px solid $color-main;
+    border-radius: 50%;
+    background: #fff url("../img/icon-download.svg") center center no-repeat;
+  }
+
+  &__text {
+    padding: 5px 20px;
+    background-color: white;
+  }
+}
