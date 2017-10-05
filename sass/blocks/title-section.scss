@@ -1,10 +1,11 @@
 .title-section {
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 20px;
   font-family: $font-family-base;
   font-weight: 200;
   font-size: 50px;
   text-align: center;
+  letter-spacing: 2px;
   text-transform: uppercase;
 
   &::first-letter {

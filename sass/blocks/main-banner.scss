@@ -4,12 +4,13 @@
 
   .container {
     padding-top: 20px;
-    padding-bottom: 240px;
+    padding-bottom: 245px;
   }
 
   &__text {
-    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 65px;
+    font-size: 23px;
     text-align: center;
-    margin-bottom: 40px;
   }
 }

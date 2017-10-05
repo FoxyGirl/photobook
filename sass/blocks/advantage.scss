@@ -11,7 +11,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 55px 0 85px 0;
+    padding: 0 0 45px 0;
 
     @media (max-width: 1007px) {
       justify-content: center;
@@ -26,7 +26,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px 15px;
     margin: 10px;
 
     @media (min-width: 711px) and (max-width: 1007px) {
@@ -56,7 +56,7 @@
   &__title {
     font-size: 24px;
     font-weight: 300;
-    margin-top: 10px;
+    margin-top: 25px;
     margin-bottom: 15px;
   }
 
