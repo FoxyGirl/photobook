@@ -12,6 +12,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px 0 85px 0;
+
+    @media (max-width: 1079px) {
+      justify-content: center;
+    }
   }
 
   &__item {
@@ -23,14 +27,28 @@
     border: 5px solid $color-main;
     border-radius: $brd-rad;
 
+    @media (max-width: 1079px) {
+      width: 45%;
+    }
+
+    @media (max-width: 820px) {
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
     &--best {
       position: relative;
+
+      @media (max-width: 820px) {
+        margin-top: 50px;
+      }
 
       &::before {
         content: "bestseller";
         position: absolute;
         width: 70%;
-        top: -30px;
+        top: -28px;
         left: 50%;
         transform: translateX(-50%);
         padding: 10px 0;
@@ -53,6 +71,7 @@
         left: 50%;
         transform: translateX(-50%);
         background: transparent url("../img/best-shape.svg") center center no-repeat;
+        background-size: 100% auto;
       }
     }
   }
@@ -60,14 +79,19 @@
   &__header {
     margin-bottom: 20px;
     padding: 34px 20px;
+    position: relative;
+    z-index: 2;
     font-size: 29px;
     font-weight: 400;
     text-align: center;
     letter-spacing: 3px;
     text-transform: uppercase;
     background-color: $color-main;
-    border-top-left-radius: $brd-rad;
-    border-top-right-radius: $brd-rad;
+
+    @media (max-width: 820px) {
+      width: 100%;
+      padding: 10px;
+    }
 
     span {
       font-size: 36px;
@@ -79,6 +103,11 @@
     text-align: center;
     font-size: 60px;
     font-weight: 300;
+
+    @media (max-width: 820px) {
+      margin-right: 20px;
+      margin-left: auto;
+    }
   }
 
   &__footer {
@@ -89,7 +118,9 @@
     text-align: center;
     letter-spacing: 2px;
     background-color: $color-main;
-    border-bottom-left-radius: $brd-rad;
-    border-bottom-right-radius: $brd-rad;
+
+    @media (max-width: 820px) {
+      width: 100%;
+    }
   }
 }

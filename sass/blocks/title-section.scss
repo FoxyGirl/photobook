@@ -14,9 +14,19 @@
 
   @include respond(tablet) {
     font-size: 30px;
+
+    &::first-letter {
+      font-size: 40px;
+    }
   }
 
   @include respond(mobile) {
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 24px;
+
+    &::first-letter {
+      font-size: 34px;
+    }
   }
 }
