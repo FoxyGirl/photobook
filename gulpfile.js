@@ -35,8 +35,11 @@ gulp.task("style", function() {
                 "last 2 Edge versions"
             ]}),
             mqpacker({
-                // sort: true
-                sort: false
+                // sort: function (a, b) {
+                //     return a.localeCompare(b);
+                // }
+                sort: true
+                // sort: false
             })
         ]))
         .pipe(minify())

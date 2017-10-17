@@ -1,37 +1,37 @@
 .page-header {
   position: relative;
   background-color: #fff;
+  background-color: cyan;
   min-height: 80px;
   @include clearfix;
 
 }
 
-//@media (max-width: 1120px) {
-@include respond(desktop) {
-  .page-header {
-    background-color: red;
-  }
-
-}
-
-//@media (max-width: 992px) {
-@include respond(tablet) {
-  .page-header {
-    background-color: yellow;
-  }
-}
-
-//@media (max-width: 768px) {
+//@media (max-width: 400px) {
 @include respond(mobile) {
   .page-header {
     background-color: green;
   }
 }
 
-//@media (max-width: 400px) {
-@include respond(mobile-small) {
-  .page-header {
-    background-color: cyan;
-  }
 
+@media (min-width: 1120px) {
+  //@include respond(desktop-all) {
+  .page-header {
+    background-color: #fff;
+  }
 }
+
+//@media (max-width: 768px) {
+@include respond(tablet) {
+  .page-header {
+    background-color: yellow;
+  }
+}
+//@media (max-width: 992px) {
+@include respond(desktop) {
+  .page-header {
+    background-color: red;
+  }
+}
+

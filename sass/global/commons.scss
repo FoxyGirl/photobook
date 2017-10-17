@@ -33,6 +33,8 @@ h1 {
   text-align: center;
   text-transform: uppercase;
 
+  color: cyan;
+
   &::first-letter {
     font-size: 65px;
   }
@@ -91,7 +93,32 @@ h1 {
 
 /********** Responsive ******/
 
-@media (max-width: 1120px) {
+
+
+
+@include respond(mobile) {
+  h1 {
+    font-size: 24px;
+    color: green;
+
+    &::first-letter {
+      font-size: 37px;
+    }
+  }
+}
+
+@include respond(tablet) {
+  h1 {
+    font-size: 32px;
+    color: yellow;
+
+    &::first-letter {
+      font-size: 47px;
+    }
+  }
+}
+
+@include respond(desktop) {
   h1 {
     font-size: 40px;
     color: red;
@@ -102,38 +129,8 @@ h1 {
   }
 }
 
-@media (max-width: 992px) {
+@include respond(desktop-all) {
   h1 {
-    font-size: 32px;
-    color: yellow;
-
-    &::first-letter {
-      font-size: 47px;
-    }
+    color: blue;
   }
-
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 24px;
-    color: green;
-
-    &::first-letter {
-      font-size: 37px;
-    }
-  }
-
-}
-
-@media (max-width: 400px) {
-  h1 {
-    font-size: 24px;
-    color: cyan;
-
-    &::first-letter {
-      font-size: 37px;
-    }
-  }
-
 }
