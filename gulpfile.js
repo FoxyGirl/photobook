@@ -35,7 +35,8 @@ gulp.task("style", function() {
                 "last 2 Edge versions"
             ]}),
             mqpacker({
-                sort: true
+                // sort: true
+                sort: false
             })
         ]))
         .pipe(minify())

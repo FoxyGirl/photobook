@@ -15,6 +15,10 @@
   border-radius: $brd-rad;
   outline: none;
 
+  @include respond(mobile) {
+    font-size: $fsz-btn-small;
+  }
+
   &:hover {
     background-color: $color-btn-hover;
   }

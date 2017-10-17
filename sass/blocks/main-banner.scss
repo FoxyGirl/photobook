@@ -3,6 +3,7 @@
   background-size: cover;
 
   .container {
+    max-height: 100vh;
     padding-top: 20px;
     padding-bottom: 245px;
   }
@@ -12,5 +13,10 @@
     margin-bottom: 65px;
     font-size: 23px;
     text-align: center;
+
+    @include respond(mobile-small) {
+      font-size: $fsz-base;
+      margin-bottom: 40px;
+    }
   }
 }

@@ -29,4 +29,8 @@
       font-size: 34px;
     }
   }
+
+  @include respond(mobile-small) {
+    font-size: $fsz-xsmall-title;
+  }
 }

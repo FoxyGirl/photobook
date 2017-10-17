@@ -37,21 +37,29 @@ h1 {
     font-size: 65px;
   }
 
-  @include respond(tablet) {
-    font-size: 40px;
-
-    &::first-letter {
-      font-size: 55px;
-    }
-  }
-
-  @include respond(mobile) {
-    font-size: 32px;
-
-    &::first-letter {
-      font-size: 47px;
-    }
-  }
+  //@include respond(tablet) {
+  //  font-size: 40px;
+  //
+  //  &::first-letter {
+  //    font-size: 55px;
+  //  }
+  //}
+  //
+  //@include respond(mobile) {
+  //  font-size: 32px;
+  //
+  //  &::first-letter {
+  //    font-size: 47px;
+  //  }
+  //}
+  //
+  //@include respond(mobile-small) {
+  //  font-size: 24px;
+  //
+  //  &::first-letter {
+  //    font-size: 37px;
+  //  }
+  //}
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -78,4 +86,54 @@ h1 {
   padding: 0 $indent;
   text-align: center;
   @include clearfix;
+}
+
+
+/********** Responsive ******/
+
+@media (max-width: 1120px) {
+  h1 {
+    font-size: 40px;
+    color: red;
+
+    &::first-letter {
+      font-size: 55px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 32px;
+    color: yellow;
+
+    &::first-letter {
+      font-size: 47px;
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+    color: green;
+
+    &::first-letter {
+      font-size: 37px;
+    }
+  }
+
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 24px;
+    color: cyan;
+
+    &::first-letter {
+      font-size: 37px;
+    }
+  }
+
 }
