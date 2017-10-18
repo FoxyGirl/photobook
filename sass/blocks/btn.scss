@@ -3,10 +3,10 @@
   vertical-align: top;
   box-sizing: border-box;
   margin: 0 10px 20px;
-  padding: 16px 30px;;
-  font-size: $fsz-btn;
+  padding: 16px 10px;
+  font-size: $fsz-btn-small;
   font-weight: 200;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
@@ -15,8 +15,14 @@
   border-radius: $brd-rad;
   outline: none;
 
+  @include respond(mobile-small) {
+    padding: 16px 20px;
+  }
+
   @include respond(mobile) {
-    font-size: $fsz-btn-small;
+    font-size: $fsz-btn;
+    padding: 16px 30px;
+    letter-spacing: 2px;
   }
 
   &:hover {

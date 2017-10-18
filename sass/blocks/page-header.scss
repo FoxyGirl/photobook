@@ -5,33 +5,20 @@
   min-height: 80px;
   @include clearfix;
 
-}
-
-//@media (max-width: 400px) {
-@include respond(mobile) {
-  .page-header {
-    background-color: green;
+  @include respond(mobile) {
+      background-color: green;
   }
-}
 
-
-@media (min-width: 1120px) {
-  //@include respond(desktop-all) {
-  .page-header {
-    background-color: #fff;
-  }
-}
-
-//@media (max-width: 768px) {
-@include respond(tablet) {
-  .page-header {
+  @include respond(tablet) {
     background-color: yellow;
   }
-}
-//@media (max-width: 992px) {
-@include respond(desktop) {
-  .page-header {
+
+  @include respond(desktop) {
     background-color: red;
   }
-}
 
+  @include respond(desktop-all) {
+    background-color: purple;
+  }
+
+}

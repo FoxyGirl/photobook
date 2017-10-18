@@ -39,11 +39,11 @@ $bp-xlarge: 1080px + 2 * $indent; // Desktop seamless transition
 /*==========  Mobile First  ==========*/
 
 @mixin respond($media) {
-  //
-  //// for Extra Small Devices, Phones
-  //@if $media == mobile-small {
-  //  @media only screen and (min-width: $bp-xsmall) { @content; }
-  //}
+
+  // for Extra Small Devices, Phones
+  @if $media == mobile-small {
+    @media only screen and (min-width: $bp-xsmall) { @content; }
+  }
 
   // for Small Devices, Phones
   @if $media == mobile {
