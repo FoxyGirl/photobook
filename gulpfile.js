@@ -11,6 +11,7 @@ var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var sourcemaps = require('gulp-sourcemaps');
 var mqpacker = require("css-mqpacker");
+var sortCSSmq = require('sort-css-media-queries');
 var minify = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
@@ -35,7 +36,8 @@ gulp.task("style", function() {
                 "last 2 Edge versions"
             ]}),
             mqpacker({
-                sort: true
+                sort: sortCSSmq
+                // sort: sortCSSmq.desktopFirst
             })
         ]))
         .pipe(minify())

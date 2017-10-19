@@ -4,7 +4,9 @@
   "description": "Test verstka",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "editorconfig-cli",
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
   },
   "repository": {
     "type": "git",
@@ -30,16 +32,12 @@
     "gulp-postcss": "6.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "2.3.2",
+    "gulp-sourcemaps": "^1.9.1",
     "gulp-svgmin": "^1.2.3",
     "gulp-svgstore": "^6.0.0",
-    "gulp-sourcemaps": "^1.9.1",
     "gulp-uglify": "^2.0.0",
-    "run-sequence": "^1.2.2"
-  },
-  "scripts": {
-    "test": "editorconfig-cli",
-    "build": "gulp build",
-    "start": "npm run build && gulp serve"
+    "run-sequence": "^1.2.2",
+    "sort-css-media-queries": "^1.3.3"
   },
   "editorconfig-cli": [
     "*.html",
