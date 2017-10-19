@@ -1,5 +1,6 @@
 $bp-xsmall: 320px; // Tiny-screen and old devices;
 $bp-small: 400px; // Mobiles and portrait-view tablets
+$bp-sm-middle: 600px; // Mobiles and portrait-view tablets
 $bp-middle: 768px; // Normal mobile devices and small tablets;
 $bp-large: 992px; // Desktop starts here
 $bp-xlarge: 1080px + 2 * $indent; // Desktop seamless transition
@@ -48,6 +49,11 @@ $bp-xlarge: 1080px + 2 * $indent; // Desktop seamless transition
   // for Small Devices, Phones
   @if $media == mobile {
     @media (min-width: $bp-small) { @content; }
+  }
+
+  // for Small Devices and Small Tablets
+  @if $media == tablet-small {
+    @media (min-width: $bp-sm-middle) { @content; }
   }
 
   // for Small Devices and Tablets
