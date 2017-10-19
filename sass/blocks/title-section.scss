@@ -3,21 +3,13 @@
   margin-bottom: 20px;
   font-family: $font-family-base;
   font-weight: 200;
-  font-size: 50px;
+  font-size: $fsz-xsmall-title;
   text-align: center;
   letter-spacing: 2px;
   text-transform: uppercase;
 
   &::first-letter {
-    font-size: 60px;
-  }
-
-  @include respond(tablet) {
-    font-size: 30px;
-
-    &::first-letter {
-      font-size: 40px;
-    }
+    font-size: 34px;
   }
 
   @include respond(mobile) {
@@ -30,7 +22,19 @@
     }
   }
 
-  @include respond(mobile-small) {
-    font-size: $fsz-xsmall-title;
+  @include respond(tablet) {
+    font-size: 30px;
+
+    &::first-letter {
+      font-size: 40px;
+    }
+  }
+
+  @include respond(desktop) {
+    font-size: 50px;
+
+    &::first-letter {
+      font-size: 60px;
+    }
   }
 }
