@@ -1,0 +1,56 @@
+.slider {
+  min-height: 450px;
+  outline: 1px solid red;
+
+  &--testimonials {
+
+  }
+
+  &__content {
+    @include ul-clear;
+  }
+
+  &__arrows {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 110px;
+    font-size: 16px;
+    font-weight: 200;
+
+  }
+
+  &--testimonials {
+    .slider__arrow {
+      cursor: pointer;
+
+      &--prev {
+        &::before {
+          content: "←";
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 10px;
+        }
+      }
+
+      &--next {
+        &::after {
+          content: "→";
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 10px;
+        }
+      }
+
+      &:hover,
+      &:active {
+        text-decoration: underline;
+      }
+
+      &:active {
+        opacity: 0.5;
+      }
+    }
+  }
+
+
+}

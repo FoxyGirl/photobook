@@ -1,0 +1,24 @@
+.testimonials {
+  background: $color-bg url("../img/bg-testimonials-short.png") 90% 0 no-repeat;
+  background-size: 35% 100%;
+
+  .container {
+    padding-top: 10px;
+    padding-bottom: 15px;
+
+    @include respond(tablet) {
+      padding-top: 30px;
+      padding-bottom: 75px;
+    }
+  }
+
+  &__inner {
+    width: 50%;
+  }
+  
+  &__text {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 300;
+  }
+}

@@ -59,7 +59,9 @@
       height: 50%;
       background-color: #fff;
 
+      //@media (min-width: 640px) {
       @media (min-width: 640px) {
+        width: 50%;
         display: block;
       }
     }
@@ -96,6 +98,7 @@
     }
 
     @media (min-width: 640px) {
+    //@media (min-width: 660px) {
       &:nth-child(3) {
         order: 3;
       }

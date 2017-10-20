@@ -19,7 +19,7 @@
     padding: 16px 20px;
   }
 
-  @include respond(mobile) {
+  @include respond(tablet) {
     font-size: $fsz-btn;
     padding: 16px 30px;
     letter-spacing: 2px;
