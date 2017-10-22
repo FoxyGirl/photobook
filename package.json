@@ -51,6 +51,7 @@
     "node": "6.5"
   },
   "dependencies": {
-    "node.normalize.scss": "^3.0.3"
+    "node.normalize.scss": "^3.0.3",
+    "object-fit-polyfill": "^0.1.0"
   }
 }
