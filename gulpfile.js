@@ -51,9 +51,9 @@ gulp.task("style", function() {
 
 gulp.task("scripts", function() {
     // return gulp.src(["!js/picturefill.min.js", "js/*.js"])
-    return gulp.src(["datepicker.js", "js/*.js"])
+    return gulp.src(["js/*.js"])
         .pipe(concat("scripts.min.js"))
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(gulp.dest("build/js"));
 });
 
@@ -137,6 +137,10 @@ gulp.task("watch:img", ["copy:img"], function(done) {
         done();
 });
 
+gulp.task("watch:js", ["scripts"], function(done) {
+    server.reload(),
+        done();
+});
 
 gulp.task("serve", function() {
     server.init({
@@ -148,6 +152,7 @@ gulp.task("serve", function() {
 
     gulp.watch("sass/**/*.*", ["style"]);
     gulp.watch("img/**/*.*", ["watch:img"]);
+    gulp.watch("js/**/*.*", ["watch:js"]);
     gulp.watch("*.html", ["watch:html"]);
 });
 
