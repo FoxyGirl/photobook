@@ -1,4 +1,5 @@
 .testimonials {
+  background-color: $color-bg;
 
   @include respond(tablet-small) {
     background: $color-bg url("../img/bg-testimonials-short.png") 90% 0 no-repeat;

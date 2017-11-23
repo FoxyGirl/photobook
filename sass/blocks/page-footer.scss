@@ -1,3 +1,33 @@
 .page-footer {
   background: $color-main;
+
+  .container {
+    padding-top: 70px;
+    padding-bottom: 55px;
+    text-align: left;
+  }
+  
+  &__navigation {
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    outline: 1px solid red;
+
+    .submenu {
+      flex-basis: 155px;
+      margin-right: 85px;
+      padding-top: 30px;
+      border-top: 1px solid #000;
+    }
+  }
+  
+  &__additions {
+    float: left;
+  }
+
+  &__copyright {
+    margin-top: 35px;
+    font-size: 14px;
+    text-align: center;
+  }
 }

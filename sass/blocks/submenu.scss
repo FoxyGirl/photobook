@@ -1,0 +1,21 @@
+.submenu {
+  @include ul-clear;
+
+  &__item {
+    margin-bottom: 10px;
+
+    a {
+      color: #000;
+      text-decoration: none;
+
+      &:hover,
+      &:active {
+        text-decoration: underline;
+      }
+
+      &:active {
+        opacity: 0.7;
+      }
+    }
+  }
+}
