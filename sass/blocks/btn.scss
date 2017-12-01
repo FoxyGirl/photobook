@@ -49,5 +49,18 @@
       background-color: rgba($color-btn-active, $opacity-btn);
       border-color: transparent;
     }
+
   }
+
+  &.btn--phone {
+    background-color: $color-main;
+    color: #000;
+    border-radius: 8px;
+    padding: 5px 18px 10px;
+
+    span {
+      border-bottom: 1px dashed #000;
+    }
+  }
+
 }

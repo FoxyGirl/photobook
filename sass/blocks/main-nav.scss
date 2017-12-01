@@ -1,0 +1,114 @@
+.main-nav{
+  position: relative;
+  outline: 1px solid black;
+
+  &__toggler {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    width: 25px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    outline: 1px solid green;
+
+    span {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      height: 2px;
+      transform: translateY(-50%);
+      background-color: #000;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+        transform-origin: 50% 50%;
+      }
+
+      &::before {
+        top: -6px;
+      }
+
+      &::after {
+        bottom: -6px;
+      }
+
+    }
+
+
+    &:hover {
+      span {
+        &::before {
+          top: -8px;
+          transition: top 0.3s;
+        }
+
+        &::after {
+          bottom: -8px;
+          transition: bottom 0.3s;
+        }
+      }
+    }
+
+    &--close.main-nav__toggler {
+      span {
+        background-color: transparent;
+
+        &::before {
+          top: 50%;
+          transform: translateY(-50%) rotate(45deg);
+          transform-origin: 50% 50%;
+        }
+
+        &::after {
+          bottom: 50%;
+          transform: translateY(50%) rotate(-45deg);
+          transform-origin: 50% 50%;
+        }
+      }
+
+
+      &:hover {
+        span {
+
+          &::before {
+            top: 50%;
+            transform: scale(1.2, 1.2) translateY(50%) rotate(45deg);
+            transition: transform 0.3s;
+          }
+
+          &::after {
+            bottom: 50%;
+            transform: scale(1.2, 1.2) translateY(50%) rotate(-45deg);
+            transition: transform 0.3s;
+          }
+        }
+      }
+
+    }
+
+  }
+
+  &__list {
+    @include ul-clear;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 20px;
+    flex-grow: 1;
+  }
+
+}

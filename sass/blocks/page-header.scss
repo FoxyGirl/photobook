@@ -1,10 +1,11 @@
 .page-header {
   position: relative;
   background-color: #fff;
-  background-color: cyan;
-  min-height: 80px;
+  position: relative;
   @include clearfix;
-
+/*
+  background-color: cyan;
+  
   @include respond(mobile) {
       background-color: green;
   }
@@ -20,5 +21,43 @@
   @include respond(desktop-all) {
     background-color: purple;
   }
+*/
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
 
+    @include respond(desktop-all) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__wrapper-flex {
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    //float: left;
+    margin-left: 80px;
+  }
+
+  &__logo-link {
+    display: block;
+
+    &:hover {
+      svg {
+        path {
+          fill: $color-secondary;
+        }
+      }
+    }
+  }
+
+  .btn--phone {
+    margin-left: auto;
+    margin-bottom: 0;
+  }
 }
