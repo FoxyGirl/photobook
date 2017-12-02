@@ -17,9 +17,11 @@
       left: 0;
       top: 50%;
       width: 100%;
+      margin-top: -1px;
       height: 2px;
-      transform: translateY(-50%);
-      background-color: #000;
+      //transform: translateY(-50%);
+      background: #000;
+      transition: background-color .3s .5s;
 
       &::before,
       &::after {
@@ -30,14 +32,15 @@
         height: 2px;
         background-color: #000;
         transform-origin: 50% 50%;
+        transition: top .3s .3s;
       }
 
       &::before {
-        top: -6px;
+        top: 6px;
       }
 
       &::after {
-        bottom: -6px;
+        top: -6px;
       }
 
     }
@@ -46,13 +49,11 @@
     &:hover {
       span {
         &::before {
-          top: -8px;
-          transition: top 0.3s;
+          top: 8px;
         }
 
         &::after {
-          bottom: -8px;
-          transition: bottom 0.3s;
+          top: -8px;
         }
       }
     }
@@ -60,35 +61,40 @@
     &--close.main-nav__toggler {
       span {
         background-color: transparent;
+        //background: 0 0;
+        transition: background-color .3s, transform .3s .5s;
+
+        &::before,
+        &::after {
+          top: 0;
+          transition: top .3s,transform .3s .5s,-webkit-transform .3s .5s;
+        }
 
         &::before {
-          top: 50%;
-          transform: translateY(-50%) rotate(45deg);
-          transform-origin: 50% 50%;
+          transform: rotate3d(0,0,1,45deg);
         }
 
         &::after {
-          bottom: 50%;
-          transform: translateY(50%) rotate(-45deg);
-          transform-origin: 50% 50%;
+          transform: rotate3d(0,0,1,-45deg);
         }
       }
 
-
       &:hover {
         span {
+          transform: rotate3d(0,0,1,-90deg);
+          transition: transform .3s .5s;
 
+/*
           &::before {
-            top: 50%;
-            transform: scale(1.2, 1.2) translateY(50%) rotate(45deg);
-            transition: transform 0.3s;
+            transform: rotate3d(0,0,1,-45deg);
+            transition: transform .3s .5s;
           }
 
           &::after {
-            bottom: 50%;
-            transform: scale(1.2, 1.2) translateY(50%) rotate(-45deg);
-            transition: transform 0.3s;
+            transform: rotate3d(0,0,1,45deg);
+            transition: transform .3s .5s;
           }
+*/
         }
       }
 
