@@ -40,7 +40,7 @@
 
     &:hover {
       color: #fff;
-      background-color: rgba($color-btn-hover, $opacity-btn);
+      background-color: $color-secondary;
       border-color: transparent;
     }
 
@@ -57,6 +57,19 @@
     color: #000;
     border-radius: 8px;
     padding: 5px 18px 10px;
+    
+    &:hover {
+      background-color: $color-secondary;
+      color: #fff;
+
+      span {
+        border-color: #fff;
+      }
+    }
+
+    &:active {
+      background-color: rgba($color-secondary, $act-opacity);
+    }
 
     span {
       border-bottom: 1px dashed #000;
