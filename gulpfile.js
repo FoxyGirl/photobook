@@ -76,6 +76,34 @@ gulp.task("symbols", function() {
         .pipe(gulp.dest("img"));
 });
 
+gulp.task('svg-clean', function () {
+    return gulp.src('img/*' +
+        '.svg')
+        .pipe(svgmin({
+            plugins: [{
+                removeViewBox: false
+            }, {
+                cleanupNumericValues: {
+                    floatPrecision: 2
+                }
+            },
+                {
+                convertColors: {
+                    names2hex: false,
+                    rgb2hex: false
+                }
+            }, {
+                removeDimensions: false
+            }]
+        }))
+        .pipe(svgmin({
+            js2svg: {
+                pretty: true
+            }
+        }))
+        .pipe(gulp.dest('img'));
+});
+
 gulp.task("copy", function() {
     return gulp.src([
         "fonts/*.*",
