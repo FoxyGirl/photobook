@@ -1,4 +1,4 @@
-.main-nav{
+.main-nav {
   position: relative;
 
   &__toggler {
@@ -110,6 +110,7 @@
 
   &__list {
     @include ul-clear;
+    overflow: hidden;
 
     @include respond(tablet-small) {
       position: absolute;
@@ -118,6 +119,10 @@
       width: 100%;
       display: flex;
       justify-content: space-between;
+    }
+
+    &--hidden.main-nav__list {
+      display: none;
     }
 
   }
@@ -161,5 +166,17 @@
       }
     }
   }
+
+}
+
+.no-js {
+  .main-nav {
+    display: block;
+
+    &__toggler {
+      display: none;
+    }
+  }
+
 
 }
