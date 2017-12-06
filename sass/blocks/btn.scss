@@ -57,6 +57,8 @@
     color: #000;
     border-radius: 8px;
     padding: 5px 18px 10px;
+    order: 1;
+    width: 60%;
     
     &:hover {
       background-color: $color-secondary;
@@ -73,6 +75,11 @@
 
     span {
       border-bottom: 1px dashed #000;
+    }
+
+    @include respond(tablet-small) {
+      order: 0;
+      width: auto;
     }
   }
 

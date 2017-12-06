@@ -12,6 +12,9 @@
 
     @include respond(tablet-small) {
       top: -55px;
+    }
+
+    @include respond(desktop-all) {
       left: 0;
     }
 
@@ -125,7 +128,8 @@
     flex-grow: 1;
 
     @include respond(tablet-small) {
-      border-bottom: 1px solid $color-secondary;
+      border-bottom: 2px solid transparent;
+      border-right: 2px solid $color-secondary;
     }
 
     &:hover {

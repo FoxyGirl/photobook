@@ -3,6 +3,26 @@
   vertical-align: baseline;
   width: 36px;
   height: 30px;
-  background: #fff url('../img/icon-login.svg') 0 0 no-repeat;
-  background-size:contain;
+  margin-left: 25px;
+  margin-right: 20px;
+
+  @include respond(tablet-small) {
+    margin-left: 55px;
+  }
+
+  @include respond(desktop-all) {
+    margin-right: 0;
+  }
+
+  &:hover {
+    svg {
+      fill: $color-secondary;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: rgba($color-secondary, $act-opacity);
+    }
+  }
 }
