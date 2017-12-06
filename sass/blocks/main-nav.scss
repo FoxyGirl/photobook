@@ -27,7 +27,7 @@
       height: 2px;
       //transform: translateY(-50%);
       background: #000;
-      transition: background-color .3s .5s;
+      transition: background-color .3s;
 
       &::before,
       &::after {
@@ -38,7 +38,7 @@
         height: 2px;
         background-color: #000;
         transform-origin: 50% 50%;
-        transition: top .3s .3s;
+        transition: top .3s;
       }
 
       &::before {
@@ -73,7 +73,7 @@
         &::before,
         &::after {
           top: 0;
-          transition: top .3s,transform .3s .5s,-webkit-transform .3s .5s;
+          transition: top .3s, transform .3s .5s;
         }
 
         &::before {
@@ -171,7 +171,14 @@
 
 .no-js {
   .main-nav {
-    display: block;
+
+    &__list {
+      display: block;
+
+      @include respond(tablet-small) {
+        display: flex !important;
+      }
+    }
 
     &__toggler {
       display: none;
