@@ -1,339 +1,1 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-    <head>
-        <meta charset="UTF-8">
-        <title>Photobook</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="css/style.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script>
-            document.documentElement.classList.remove('no-js');
-        </script>
-    </head>
-    <body>
-    <header class="page-header">
-        <div class="container">
-            <div class="page-header__wrapper-flex">
-                <div class="page-header__logo">
-                    <a href="" class="page-header__logo-link">
-                        <svg data-name="logo-photobook" xmlns="http://www.w3.org/2000/svg" 
-                             viewBox="0 0 162 19"
-                             width="162" height="19"
-                             aria-labelledby="title">
-                            <title id="title">logo-photobook</title>
-                            <path fill-rule="evenodd" d="M161.803 17.876c.151.076.202.204.202.383 0 .281-.101.409-.228.409h-3.47c-.151 0-.329-.102-.456-.205-1.342-1.354-2.837-3.093-4.103-4.677-1.773-2.224-3.166-3.63-3.723-3.63h-.507c.076.92.102 2.198.102 3.399v4.883c0 .102-.127.23-.228.23h-2.787c-.126 0-.227-.128-.227-.23V.877c0-.128.101-.257.227-.257h2.787c.101 0 .228.129.228.257v4.217c0 1.074-.026 2.173-.077 3.042h.482c.431 0 1.697-1.303 3.445-3.425 1.012-1.202 2.228-2.684 3.368-3.886.127-.127.253-.205.405-.205h3.242c.127 0 .203.129.203.282 0 .128-.051.23-.127.281-.659.358-2.381 2.148-4.609 4.627-1.318 1.406-2.558 2.684-3.116 3.016.507.205 1.951 1.79 3.673 3.707 2.077 2.352 4.534 4.908 5.294 5.343zM134.387 19c-5.04 0-9.118-3.783-9.118-9.637 0-5.726 4.229-9.331 9.118-9.331 4.863 0 9.118 3.503 9.118 9.331 0 5.777-3.85 9.637-9.118 9.637zm.025-16.334c-3.292 0-5.572 2.122-5.572 6.697 0 4.192 1.95 7.004 5.547 7.004 3.723 0 5.547-2.786 5.547-7.004 0-4.55-2.28-6.697-5.522-6.697zM114.089 19c-5.04 0-9.119-3.783-9.119-9.637 0-5.726 4.23-9.331 9.119-9.331 4.863 0 9.117 3.503 9.117 9.331 0 5.777-3.849 9.637-9.117 9.637zm.025-16.334c-3.293 0-5.573 2.122-5.573 6.697 0 4.192 1.951 7.004 5.548 7.004 3.722 0 5.546-2.786 5.546-7.004 0-4.55-2.279-6.697-5.521-6.697zm-11.002 11.222c0 2.939-2.203 4.78-5.978 4.78h-7.167c-.127 0-.228-.128-.228-.23V.877c0-.128.101-.257.228-.257h6.129c4.61 0 5.927 2.25 5.927 4.27 0 2.173-1.849 3.604-3.875 4.064 2.609.205 4.964 2.147 4.964 4.934zm-4.407-8.334c0-1.712-.962-2.557-3.242-2.557-.76 0-1.798-.024-2.583-.076.076.921.101 1.79.101 2.659 0 .869-.025 1.841-.101 2.684a20.17 20.17 0 0 1 2.203-.102c2.584 0 3.622-1.048 3.622-2.608zm-2.938 4.781a52.44 52.44 0 0 1-2.887-.077c.076.946.101 1.968.101 3.042 0 1.022-.025 2.019-.101 3.042a86.376 86.376 0 0 1 3.672-.077c2.229 0 3.242-.946 3.242-2.837 0-1.866-1.164-3.093-4.027-3.093zm-9.958 3.798l-4.214-7.36a.193.193 0 0 1 .166-.289h5.03c.084 0 .158.055.183.136.272.884.418 1.823.418 2.797a9.447 9.447 0 0 1-1.252 4.716.19.19 0 0 1-.331 0zm-8.255-9.128a.192.192 0 0 1-.165-.289L79.904.318a.19.19 0 0 1 .208-.091 9.353 9.353 0 0 1 6.036 4.488.192.192 0 0 1-.166.288l-8.428.002zm-3.529 2.643a.19.19 0 0 1-.331 0l-2.513-4.394a.195.195 0 0 1 .025-.228A9.268 9.268 0 0 1 78.06-.002h.004c.146 0 .237.161.164.289l-4.203 7.361zm.339 4.708h-5.032a.192.192 0 0 1-.183-.136 9.498 9.498 0 0 1-.42-2.803c0-1.719.456-3.33 1.253-4.718a.19.19 0 0 1 .331 0l4.216 7.368a.192.192 0 0 1-.165.289zm-9.186-9.153c-1.115 0-2.204-.027-3.317-.103.05.945.075 1.918.075 2.863v12.475c0 .102-.127.23-.228.23h-2.76c-.127 0-.228-.128-.228-.23V5.912c0-.945.024-1.918.076-2.812a39.927 39.927 0 0 1-3.014.103c-1.165 0-2.052.051-3.217.051-.127 0-.202-.078-.178-.205l.329-2.198c.026-.153.077-.231.178-.231H67.99c.126 0 .177.078.177.205v2.25c0 .101-.051.179-.177.179-.861 0-1.925-.051-2.812-.051zM42.144 19c-5.04 0-9.119-3.783-9.119-9.637 0-5.726 4.23-9.331 9.119-9.331 4.863 0 9.117 3.503 9.117 9.331 0 5.777-3.849 9.637-9.117 9.637zm.025-16.334c-3.293 0-5.573 2.122-5.573 6.697 0 4.192 1.951 7.004 5.548 7.004 3.722 0 5.546-2.786 5.546-7.004 0-4.55-2.279-6.697-5.521-6.697zM27.038 18.668c-.127 0-.228-.128-.228-.23v-4.473c0-1.202 0-2.429.05-3.579-1.013.051-1.621.051-2.482.051h-3.926c-.861 0-1.494 0-2.507-.051.05 1.15.076 2.377.076 3.579v4.473c0 .102-.127.23-.228.23h-2.786c-.127 0-.228-.128-.228-.23V.877c0-.128.101-.257.228-.257h2.786c.101 0 .228.129.228.257v3.757c0 1.074-.026 2.173-.076 3.195a39.83 39.83 0 0 1 2.558-.076h3.825c.911 0 1.747.025 2.532.076-.05-1.022-.05-2.121-.05-3.195V.877c0-.128.101-.257.228-.257h2.761c.101 0 .228.129.228.257v17.561c0 .102-.127.23-.228.23h-2.761zM5.602 12.073c-.988 0-1.823-.026-2.457-.077.076.895.101 2.147.101 3.349v3.093c0 .102-.126.23-.227.23H.232c-.127 0-.227-.128-.227-.23V.953C.005.774.131.62.232.62h5.649c4.406 0 6.484 2.634 6.484 5.727 0 3.502-2.381 5.726-6.763 5.726zm.026-9.049a39.09 39.09 0 0 1-2.458-.077c.051.844.076 2.377.076 3.323 0 1.099-.025 2.608-.076 3.502.659-.051 1.47-.051 2.103-.051 2.457 0 3.723-1.022 3.723-3.349 0-1.942-.963-3.348-3.368-3.348zm72.928 10.804c.147 0 .239.161.166.29l-2.515 4.395a.19.19 0 0 1-.208.091 9.352 9.352 0 0 1-6.022-4.479.193.193 0 0 1 .165-.289l8.414-.008zm3.54-2.644a.19.19 0 0 1 .331 0l2.514 4.395a.193.193 0 0 1-.025.227 9.266 9.266 0 0 1-6.856 3.029h-.013a.193.193 0 0 1-.164-.289l4.213-7.362z"/>
-                        </svg>
-                    </a>
-                </div>
-                <a href="tel:+11 235 813 2134" class="btn btn--phone">
-                    <span>+11 235 813 2134</span>
-                </a>
-                <a href="#" class="login">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 133 116"
-                         width="36" height="30">
-                        <path d="M122.6 4.5H38.5c-1.6 0-2.9 1.3-2.9 2.9 0 1.6 1.3 2.9 2.9 2.9h81.2v95.1H38.5c-1.6 0-2.9 1.3-2.9 2.9 0 1.6 1.3 2.9 2.9 2.9h84.1c1.6 0 2.9-1.3 2.9-2.9V7.4c0-1.6-1.3-2.9-2.9-2.9zm0 0"/>
-                        <path d="M50.2 75.3c-1.1 1.1-1.1 3 0 4.1.6.6 1.3.8 2 .8s1.5-.3 2-.8L72 61.6c1.1-1.1 1.1-3 0-4.1L54.3 39.8c-1.1-1.1-2.9-1.1-4.1 0-1.1 1.1-1.1 2.9 0 4.1l12.9 12.9H9.2c-1.6 0-2.9 1.3-2.9 2.9 0 1.6 1.3 2.9 2.9 2.9h53.9L50.2 75.3zm0 0"/>
-                    </svg>
-                </a>
-            </div>
-
-            <nav class="main-nav">
-                <button class="main-nav__toggler  " type="button" id="navToggler">
-                    <span></span>
-                </button>
-                <ul class="main-nav__list" id="mainNav">
-                    <li class="main-nav__item  main-nav__item--active">
-                        <a  href="#">About us</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="#">Careers</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="#">Help</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="#" target="_blank" rel="noopener noreferrer">Press</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <section class="main-banner">
-        <div class="container">
-            <h1>Create your own photostory</h1>
-            <p class="main-banner__text">Make your photobook online</p>
-            <a class="btn btn--transparent" href="">make your photobook</a>
-        </div>
-    </section>
-    <section class="steps">
-        <div class="container">
-            <ul class="steps__list">
-                <li class="steps__item">
-                    <div class="steps__image" style="background-image: url('img/icon-download.svg')"></div>
-                    <div class="steps__text">Download  photos</div>
-                </li>
-                <li class="steps__item">
-                    <div class="steps__image" style="background-image: url('img/icon-design.svg')"></div>
-                    <div class="steps__text">Design your <br> photobook</div>
-                </li>
-                <li class="steps__item">
-                    <div class="steps__image" style="background-image: url('img/icon-pay.svg')"></div>
-                    <div class="steps__text">Pay <br> for service</div>
-                </li>
-                <li class="steps__item">
-                    <div class="steps__image" style="background-image: url('img/icon-get.svg')"></div>
-                    <div class="steps__text">Get your photobook</div>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="advantage">
-        <div class="container">
-            <h2 class="title-section">advantage</h2>
-            <ul class="advantage__list">
-                <li class="advantage__item">
-                    <div class="advantage__image" style="background-image: url('img/advantage-social-media.png')"></div>
-                    <div class="advantage__descr">
-                        <div class="advantage__title">Import photos  from your social networks</div>
-                        <p class="advantage__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt modi tempora
-                        </p>
-                    </div>
-                </li>
-                <li class="advantage__item">
-                    <div class="advantage__image" style="background-image: url('img/advantage-photo.jpg')"></div>
-                    <div class="advantage__descr">
-                        <div class="advantage__title">Photo editing </div>
-                        <p class="advantage__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ora incidunt ut labore.
-                        </p>
-                    </div>
-                </li>
-                <li class="advantage__item">
-                    <div class="advantage__image" style="background-image: url('img/advantage-template.jpg')"></div>
-                    <div class="advantage__descr">
-                        <div class="advantage__title">Templates</div>
-                        <p class="advantage__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing. Ut enim ad minim, nostrud exercitation ullamco laboris nisi ut aliquip ex commodo.
-                        </p>
-                    </div>
-                </li>
-            </ul>
-            <a class="btn" href="">make your photobook</a>
-        </div>
-    </section>
-
-    <section class="solution">
-        <div class="container">
-            <h2 class="title-section">Ready solutions</h2>
-            <ul class="solution__list">
-                <li class="solution__item">
-                    <a href="" class="solution__link">
-                        <div class="solution__header"><span>L</span>ight<span>B</span>ook</div>
-                        <div class="description">
-                            <ul class="description__list">
-                                <li class="description__item">15×10 cm</li>
-                                <li class="description__item">12 pages</li>
-                                <li class="description__item">binding on the clip</li>
-                            </ul>
-                        </div>
-                        <div class="solution__price">$129</div>
-                        <div class="solution__footer">Make your LightBook</div>
-                    </a>
-                </li>
-                <li class="solution__item  solution__item--best">
-                    <a href="" class="solution__link">
-                        <div class="solution__header"><span>C</span>lassic<span>B</span>ook</div>
-                        <div class="description">
-                            <ul class="description__list">
-                                <li class="description__item">30×21 cm</li>
-                                <li class="description__item">36 pages</li>
-                                <li class="description__item">binding on the spring</li>
-                                <li class="description__item">fabric cover</li>
-                            </ul>
-                        </div>
-                        <div class="solution__price">$239</div>
-                        <div class="solution__footer">Make your ClassicBook</div>
-                    </a>
-                </li>
-                <li class="solution__item">
-                    <a href="" class="solution__link">
-                        <div class="solution__header"><span>P</span>remium<span>B</span>ook</div>
-                        <div class="description">
-                            <ul class="description__list">
-                                <li class="description__item">42×50 cm</li>
-                                <li class="description__item">50 pages</li>
-                                <li class="description__item">hardcover</li>
-                                <li class="description__item">leather cover</li>
-                                <li class="description__item">free shipping</li>
-                            </ul>
-                        </div>
-                        <div class="solution__price">$759</div>
-                        <div class="solution__footer">Make your PremiumBook</div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="testimonials">
-        <div class="container">
-            <div class="testimonials__inner">
-            <h2 class="title-section  title-section--left">testimonials</h2>
-            <div class="slider  slider--testimonials" id="profSlider">
-                <ul class="slider__content">
-                    <li class="slider__item  slider__item--active">
-                        <a href="" class="implementer">
-                            <img class="implementer__avatar" src="img/photo-master.png" alt="photo-master" data-object-fit="cover" />
-                            <div class="implementer__desc">
-                                <span class="implementer__name">John Doe</span>
-                                <span class="implementer__prof">Wedding photographer</span>
-                            </div>
-                        </a>
-                        <p class="testimonials__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </li>
-                    <li class="slider__item" >
-                        <a href="" class="implementer">
-                            <img class="implementer__avatar" src="img/advantage-template.jpg" alt="photo-master" data-object-fit="cover" />
-                            <div class="implementer__desc">
-                                <span class="implementer__name">Van Hue</span>
-                                <span class="implementer__prof">Wedding photographer</span>
-                            </div>
-                        </a>
-                        <p class="testimonials__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet, asperiores blanditiis esse nam rerum? Aliquam aspernatur consequatur dolorem, doloribus ducimus et exercitationem hic iste laborum laudantium, magnam maxime nulla quaerat quis quod similique sint, veniam voluptatibus. Cupiditate eveniet ipsam sapiente sequi unde. Alias deserunt doloribus eius laborum officia ut?
-                        </p>
-                    </li>
-                    <li class="slider__item">
-                        <a href="" class="implementer">
-                            <img class="implementer__avatar" src="img/advantage-photo.jpg" alt="photo-master" data-object-fit="cover" />
-                            <div class="implementer__desc">
-                                <span class="implementer__name">Emily Soft</span>
-                                <span class="implementer__prof">Wedding designer</span>
-                            </div>
-                        </a>
-                        <p class="testimonials__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </li>
-                </ul>
-
-                <div class="slider__controls">
-                    <i class="control  control--active" data-toggler="0"></i>
-                    <i data-toggler="1" class="control"></i>
-                    <i data-toggler="2" class="control"></i>
-                </div>
-
-                <div class="slider__arrows">
-                    <span class="slider__arrow slider__arrow--prev">Prev testimonial</span>
-                    <span class="slider__arrow slider__arrow--next">Next testimonial</span>
-                </div>
-
-            </div>
-            <a href="" class="btn btn--transparent">make your photobook</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="delivery">
-        <div class="container">
-            <ul class="delivery__list">
-                <li class="delivery__item">
-                    <a href="" class="delivery__link">
-                        <h3 class="delivery__header"><span>T</span>erms</h3>
-                        <div class="delivery__description">
-                            <p class="delivery__text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
-                            </p>
-                            <p class="delivery__text">
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.
-                            </p>
-                        </div>
-                    </a>
-                </li>
-                <li class="delivery__item">
-                    <a href="" class="delivery__link">
-                        <h3 class="delivery__header"><span>P</span>ayment</h3>
-                        <div class="delivery__description">
-                            <p class="delivery__text">Payment methods:</p>
-                            <ul class="delivery__decr-list">
-                                <li>VISA</li>
-                                <li>MasterCard</li>
-                                <li>PayPal</li>
-                                <li>American Express</li>
-                            </ul>
-                        </div>
-                    </a>
-                </li>
-                <li class="delivery__item">
-                    <a href="" class="delivery__link">
-                        <h3 class="delivery__header"><span>S</span>hipping</h3>
-                        <div class="delivery__description">
-                            <p class="delivery__text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </p>
-                            <p class="delivery__text  delivery__text--accent">
-                                Free shipping for PremiumBook
-                            </p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-            <a class="btn" href="">make your photobook</a>
-        </div>
-    </section>
-    <footer class="page-footer">
-        <div class="container">
-            <div class="page-footer__main">
-                <nav class="page-footer__navigation">
-                    <ul class="submenu">
-                        <li class="submenu__item"><a href="#!">About us</a></li>
-                        <li class="submenu__item"><a href="#!">Careers</a></li>
-                        <li class="submenu__item"><a href="#!">Help</a></li>
-                        <li class="submenu__item"><a href="#!">Press</a></li>
-                    </ul>
-                    <ul class="submenu">
-                        <li class="submenu__item"><a href="#!">Terms</a></li>
-                        <li class="submenu__item"><a href="#!">Payment</a></li>
-                        <li class="submenu__item"><a href="#!">Shipping</a></li>
-                        <li class="submenu__item"><a href="#!">Contact</a></li>
-                    </ul>
-                    <ul class="submenu">
-                        <li class="submenu__item"><a href="#!">LightBook</a></li>
-                        <li class="submenu__item"><a href="#!">ClassicBook</a></li>
-                        <li class="submenu__item"><a href="#!">PremiumBook</a></li>
-                    </ul>
-
-                </nav>
-                <div class="page-footer__additions">
-                    <ul class="socials__list  socials__list--custom">
-                        <li class="socials__item"><a href="#!" class="socials__link  socials__link--facebook" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-                        <li class="socials__item"><a href="#!" class="socials__link  socials__link--vk" target="_blank" rel="noopener noreferrer">vk</a></li>
-                        <li class="socials__item"><a href="#!" class="socials__link  socials__link--instagram" target="_blank" rel="noopener noreferrer">instagram</a></li>
-                    </ul>
-                    <a href="#!" class="logo-author" target="_blank" rel="noopener noreferrer">
-                        <span>Designed by</span>
-                        <img src="img/logo-author.png" alt="logo-author">
-                    </a>
-                </div>
-            </div>
-            <div class="page-footer__copyright">&copy; 2015 Photobook. All rights reserved</div>
-        </div>
-    </footer>
-    <!-- Arrow to top -->
-    <a class="arrow-to-up" id="toUp" href="#">
-        <svg version="1.1"  width="40" height="40" xmlns="http://www.w3.org/2000/svg"
-           viewBox="0 0 100 100" >
-            <polygon fill="#00FF00" points="0,100 50,0 100,100"/>
-        </svg>
-    </a>
-    <!-- end of Arrow to top -->
-    <script src="js/scripts.min.js"></script>
-    </body>
-</html>
+<!DOCTYPE html><html lang="en" class="no-js">    <head>        <meta charset="UTF-8">        <title>Photobook</title>        <meta name="viewport" content="width=device-width, initial-scale=1">        <link rel="stylesheet" href="css/style.min.css">        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>        <script>            document.documentElement.classList.remove('no-js');        </script>        <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">        <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">        <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">        <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">        <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">        <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">        <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">        <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">        <link rel="icon" type="image/png" sizes="194x194" href="/favicon-194x194.png">        <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">        <link rel="manifest" href="/manifest.json">        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">        <meta name="msapplication-TileColor" content="#ffd200">        <meta name="msapplication-TileImage" content="/mstile-144x144.png">        <meta name="theme-color" content="#ffffff">    </head>    <body>    <header class="page-header">        <div class="container">            <div class="page-header__wrapper-flex">                <div class="page-header__logo">                    <a href="" class="page-header__logo-link">                        <svg data-name="logo-photobook" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 162 19" width="162" height="19" aria-labelledby="title">                            <title id="title">logo-photobook</title>                            <path fill-rule="evenodd" d="M161.803 17.876c.151.076.202.204.202.383 0 .281-.101.409-.228.409h-3.47c-.151 0-.329-.102-.456-.205-1.342-1.354-2.837-3.093-4.103-4.677-1.773-2.224-3.166-3.63-3.723-3.63h-.507c.076.92.102 2.198.102 3.399v4.883c0 .102-.127.23-.228.23h-2.787c-.126 0-.227-.128-.227-.23V.877c0-.128.101-.257.227-.257h2.787c.101 0 .228.129.228.257v4.217c0 1.074-.026 2.173-.077 3.042h.482c.431 0 1.697-1.303 3.445-3.425 1.012-1.202 2.228-2.684 3.368-3.886.127-.127.253-.205.405-.205h3.242c.127 0 .203.129.203.282 0 .128-.051.23-.127.281-.659.358-2.381 2.148-4.609 4.627-1.318 1.406-2.558 2.684-3.116 3.016.507.205 1.951 1.79 3.673 3.707 2.077 2.352 4.534 4.908 5.294 5.343zM134.387 19c-5.04 0-9.118-3.783-9.118-9.637 0-5.726 4.229-9.331 9.118-9.331 4.863 0 9.118 3.503 9.118 9.331 0 5.777-3.85 9.637-9.118 9.637zm.025-16.334c-3.292 0-5.572 2.122-5.572 6.697 0 4.192 1.95 7.004 5.547 7.004 3.723 0 5.547-2.786 5.547-7.004 0-4.55-2.28-6.697-5.522-6.697zM114.089 19c-5.04 0-9.119-3.783-9.119-9.637 0-5.726 4.23-9.331 9.119-9.331 4.863 0 9.117 3.503 9.117 9.331 0 5.777-3.849 9.637-9.117 9.637zm.025-16.334c-3.293 0-5.573 2.122-5.573 6.697 0 4.192 1.951 7.004 5.548 7.004 3.722 0 5.546-2.786 5.546-7.004 0-4.55-2.279-6.697-5.521-6.697zm-11.002 11.222c0 2.939-2.203 4.78-5.978 4.78h-7.167c-.127 0-.228-.128-.228-.23V.877c0-.128.101-.257.228-.257h6.129c4.61 0 5.927 2.25 5.927 4.27 0 2.173-1.849 3.604-3.875 4.064 2.609.205 4.964 2.147 4.964 4.934zm-4.407-8.334c0-1.712-.962-2.557-3.242-2.557-.76 0-1.798-.024-2.583-.076.076.921.101 1.79.101 2.659 0 .869-.025 1.841-.101 2.684a20.17 20.17 0 0 1 2.203-.102c2.584 0 3.622-1.048 3.622-2.608zm-2.938 4.781a52.44 52.44 0 0 1-2.887-.077c.076.946.101 1.968.101 3.042 0 1.022-.025 2.019-.101 3.042a86.376 86.376 0 0 1 3.672-.077c2.229 0 3.242-.946 3.242-2.837 0-1.866-1.164-3.093-4.027-3.093zm-9.958 3.798l-4.214-7.36a.193.193 0 0 1 .166-.289h5.03c.084 0 .158.055.183.136.272.884.418 1.823.418 2.797a9.447 9.447 0 0 1-1.252 4.716.19.19 0 0 1-.331 0zm-8.255-9.128a.192.192 0 0 1-.165-.289L79.904.318a.19.19 0 0 1 .208-.091 9.353 9.353 0 0 1 6.036 4.488.192.192 0 0 1-.166.288l-8.428.002zm-3.529 2.643a.19.19 0 0 1-.331 0l-2.513-4.394a.195.195 0 0 1 .025-.228A9.268 9.268 0 0 1 78.06-.002h.004c.146 0 .237.161.164.289l-4.203 7.361zm.339 4.708h-5.032a.192.192 0 0 1-.183-.136 9.498 9.498 0 0 1-.42-2.803c0-1.719.456-3.33 1.253-4.718a.19.19 0 0 1 .331 0l4.216 7.368a.192.192 0 0 1-.165.289zm-9.186-9.153c-1.115 0-2.204-.027-3.317-.103.05.945.075 1.918.075 2.863v12.475c0 .102-.127.23-.228.23h-2.76c-.127 0-.228-.128-.228-.23V5.912c0-.945.024-1.918.076-2.812a39.927 39.927 0 0 1-3.014.103c-1.165 0-2.052.051-3.217.051-.127 0-.202-.078-.178-.205l.329-2.198c.026-.153.077-.231.178-.231H67.99c.126 0 .177.078.177.205v2.25c0 .101-.051.179-.177.179-.861 0-1.925-.051-2.812-.051zM42.144 19c-5.04 0-9.119-3.783-9.119-9.637 0-5.726 4.23-9.331 9.119-9.331 4.863 0 9.117 3.503 9.117 9.331 0 5.777-3.849 9.637-9.117 9.637zm.025-16.334c-3.293 0-5.573 2.122-5.573 6.697 0 4.192 1.951 7.004 5.548 7.004 3.722 0 5.546-2.786 5.546-7.004 0-4.55-2.279-6.697-5.521-6.697zM27.038 18.668c-.127 0-.228-.128-.228-.23v-4.473c0-1.202 0-2.429.05-3.579-1.013.051-1.621.051-2.482.051h-3.926c-.861 0-1.494 0-2.507-.051.05 1.15.076 2.377.076 3.579v4.473c0 .102-.127.23-.228.23h-2.786c-.127 0-.228-.128-.228-.23V.877c0-.128.101-.257.228-.257h2.786c.101 0 .228.129.228.257v3.757c0 1.074-.026 2.173-.076 3.195a39.83 39.83 0 0 1 2.558-.076h3.825c.911 0 1.747.025 2.532.076-.05-1.022-.05-2.121-.05-3.195V.877c0-.128.101-.257.228-.257h2.761c.101 0 .228.129.228.257v17.561c0 .102-.127.23-.228.23h-2.761zM5.602 12.073c-.988 0-1.823-.026-2.457-.077.076.895.101 2.147.101 3.349v3.093c0 .102-.126.23-.227.23H.232c-.127 0-.227-.128-.227-.23V.953C.005.774.131.62.232.62h5.649c4.406 0 6.484 2.634 6.484 5.727 0 3.502-2.381 5.726-6.763 5.726zm.026-9.049a39.09 39.09 0 0 1-2.458-.077c.051.844.076 2.377.076 3.323 0 1.099-.025 2.608-.076 3.502.659-.051 1.47-.051 2.103-.051 2.457 0 3.723-1.022 3.723-3.349 0-1.942-.963-3.348-3.368-3.348zm72.928 10.804c.147 0 .239.161.166.29l-2.515 4.395a.19.19 0 0 1-.208.091 9.352 9.352 0 0 1-6.022-4.479.193.193 0 0 1 .165-.289l8.414-.008zm3.54-2.644a.19.19 0 0 1 .331 0l2.514 4.395a.193.193 0 0 1-.025.227 9.266 9.266 0 0 1-6.856 3.029h-.013a.193.193 0 0 1-.164-.289l4.213-7.362z"/>                        </svg>                    </a>                </div>                <a href="tel:+11 235 813 2134" class="btn btn--phone">                    <span>+11 235 813 2134</span>                </a>                <a href="#" class="login">                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 133 116" width="36" height="30">                        <path d="M122.6 4.5H38.5c-1.6 0-2.9 1.3-2.9 2.9 0 1.6 1.3 2.9 2.9 2.9h81.2v95.1H38.5c-1.6 0-2.9 1.3-2.9 2.9 0 1.6 1.3 2.9 2.9 2.9h84.1c1.6 0 2.9-1.3 2.9-2.9V7.4c0-1.6-1.3-2.9-2.9-2.9zm0 0"/>                        <path d="M50.2 75.3c-1.1 1.1-1.1 3 0 4.1.6.6 1.3.8 2 .8s1.5-.3 2-.8L72 61.6c1.1-1.1 1.1-3 0-4.1L54.3 39.8c-1.1-1.1-2.9-1.1-4.1 0-1.1 1.1-1.1 2.9 0 4.1l12.9 12.9H9.2c-1.6 0-2.9 1.3-2.9 2.9 0 1.6 1.3 2.9 2.9 2.9h53.9L50.2 75.3zm0 0"/>                    </svg>                </a>            </div>            <nav class="main-nav">                <button class="main-nav__toggler  " type="button" id="navToggler">                    <span></span>                </button>                <ul class="main-nav__list" id="mainNav">                    <li class="main-nav__item  main-nav__item--active">                        <a href="#">About us</a>                    </li>                    <li class="main-nav__item">                        <a href="#">Careers</a>                    </li>                    <li class="main-nav__item">                        <a href="#">Help</a>                    </li>                    <li class="main-nav__item">                        <a href="#" target="_blank" rel="noopener noreferrer">Press</a>                    </li>                </ul>            </nav>        </div>    </header>    <section class="main-banner">        <div class="container">            <h1>Create your own photostory</h1>            <p class="main-banner__text">Make your photobook online</p>            <a class="btn btn--transparent" href="">make your photobook</a>        </div>    </section>    <section class="steps">        <div class="container">            <ul class="steps__list">                <li class="steps__item">                    <div class="steps__image" style="background-image: url('img/icon-download.svg')"></div>                    <div class="steps__text">Download  photos</div>                </li>                <li class="steps__item">                    <div class="steps__image" style="background-image: url('img/icon-design.svg')"></div>                    <div class="steps__text">Design your <br> photobook</div>                </li>                <li class="steps__item">                    <div class="steps__image" style="background-image: url('img/icon-pay.svg')"></div>                    <div class="steps__text">Pay <br> for service</div>                </li>                <li class="steps__item">                    <div class="steps__image" style="background-image: url('img/icon-get.svg')"></div>                    <div class="steps__text">Get your photobook</div>                </li>            </ul>        </div>    </section>    <section class="advantage">        <div class="container">            <h2 class="title-section">advantage</h2>            <ul class="advantage__list">                <li class="advantage__item">                    <div class="advantage__image" style="background-image: url('img/advantage-social-media.png')"></div>                    <div class="advantage__descr">                        <div class="advantage__title">Import photos  from your social networks</div>                        <p class="advantage__text">                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt modi tempora                        </p>                    </div>                </li>                <li class="advantage__item">                    <div class="advantage__image" style="background-image: url('img/advantage-photo.jpg')"></div>                    <div class="advantage__descr">                        <div class="advantage__title">Photo editing </div>                        <p class="advantage__text">                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ora incidunt ut labore.                        </p>                    </div>                </li>                <li class="advantage__item">                    <div class="advantage__image" style="background-image: url('img/advantage-template.jpg')"></div>                    <div class="advantage__descr">                        <div class="advantage__title">Templates</div>                        <p class="advantage__text">                            Lorem ipsum dolor sit amet, consectetur adipisicing. Ut enim ad minim, nostrud exercitation ullamco laboris nisi ut aliquip ex commodo.                        </p>                    </div>                </li>            </ul>            <a class="btn" href="">make your photobook</a>        </div>    </section>    <section class="solution">        <div class="container">            <h2 class="title-section">Ready solutions</h2>            <ul class="solution__list">                <li class="solution__item">                    <a href="" class="solution__link">                        <div class="solution__header"><span>L</span>ight<span>B</span>ook</div>                        <div class="description">                            <ul class="description__list">                                <li class="description__item">15×10 cm</li>                                <li class="description__item">12 pages</li>                                <li class="description__item">binding on the clip</li>                            </ul>                        </div>                        <div class="solution__price">$129</div>                        <div class="solution__footer">Make your LightBook</div>                    </a>                </li>                <li class="solution__item  solution__item--best">                    <a href="" class="solution__link">                        <div class="solution__header"><span>C</span>lassic<span>B</span>ook</div>                        <div class="description">                            <ul class="description__list">                                <li class="description__item">30×21 cm</li>                                <li class="description__item">36 pages</li>                                <li class="description__item">binding on the spring</li>                                <li class="description__item">fabric cover</li>                            </ul>                        </div>                        <div class="solution__price">$239</div>                        <div class="solution__footer">Make your ClassicBook</div>                    </a>                </li>                <li class="solution__item">                    <a href="" class="solution__link">                        <div class="solution__header"><span>P</span>remium<span>B</span>ook</div>                        <div class="description">                            <ul class="description__list">                                <li class="description__item">42×50 cm</li>                                <li class="description__item">50 pages</li>                                <li class="description__item">hardcover</li>                                <li class="description__item">leather cover</li>                                <li class="description__item">free shipping</li>                            </ul>                        </div>                        <div class="solution__price">$759</div>                        <div class="solution__footer">Make your PremiumBook</div>                    </a>                </li>            </ul>        </div>    </section>    <section class="testimonials">        <div class="container">            <div class="testimonials__inner">            <h2 class="title-section  title-section--left">testimonials</h2>            <div class="slider  slider--testimonials" id="profSlider">                <ul class="slider__content">                    <li class="slider__item  slider__item--active">                        <a href="" class="implementer">                            <img class="implementer__avatar" src="img/photo-master.png" alt="photo-master" data-object-fit="cover">                            <div class="implementer__desc">                                <span class="implementer__name">John Doe</span>                                <span class="implementer__prof">Wedding photographer</span>                            </div>                        </a>                        <p class="testimonials__text">                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.                        </p>                    </li>                    <li class="slider__item">                        <a href="" class="implementer">                            <img class="implementer__avatar" src="img/advantage-template.jpg" alt="photo-master" data-object-fit="cover">                            <div class="implementer__desc">                                <span class="implementer__name">Van Hue</span>                                <span class="implementer__prof">Wedding photographer</span>                            </div>                        </a>                        <p class="testimonials__text">                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet, asperiores blanditiis esse nam rerum? Aliquam aspernatur consequatur dolorem, doloribus ducimus et exercitationem hic iste laborum laudantium, magnam maxime nulla quaerat quis quod similique sint, veniam voluptatibus. Cupiditate eveniet ipsam sapiente sequi unde. Alias deserunt doloribus eius laborum officia ut?                        </p>                    </li>                    <li class="slider__item">                        <a href="" class="implementer">                            <img class="implementer__avatar" src="img/advantage-photo.jpg" alt="photo-master" data-object-fit="cover">                            <div class="implementer__desc">                                <span class="implementer__name">Emily Soft</span>                                <span class="implementer__prof">Wedding designer</span>                            </div>                        </a>                        <p class="testimonials__text">                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.                        </p>                    </li>                </ul>                <div class="slider__controls">                    <i class="control  control--active" data-toggler="0"></i>                    <i data-toggler="1" class="control"></i>                    <i data-toggler="2" class="control"></i>                </div>                <div class="slider__arrows">                    <span class="slider__arrow slider__arrow--prev">Prev testimonial</span>                    <span class="slider__arrow slider__arrow--next">Next testimonial</span>                </div>            </div>            <a href="" class="btn btn--transparent">make your photobook</a>            </div>        </div>    </section>    <section class="delivery">        <div class="container">            <ul class="delivery__list">                <li class="delivery__item">                    <a href="" class="delivery__link">                        <h3 class="delivery__header"><span>T</span>erms</h3>                        <div class="delivery__description">                            <p class="delivery__text">                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.                            </p>                            <p class="delivery__text">                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.                            </p>                        </div>                    </a>                </li>                <li class="delivery__item">                    <a href="" class="delivery__link">                        <h3 class="delivery__header"><span>P</span>ayment</h3>                        <div class="delivery__description">                            <p class="delivery__text">Payment methods:</p>                            <ul class="delivery__decr-list">                                <li>VISA</li>                                <li>MasterCard</li>                                <li>PayPal</li>                                <li>American Express</li>                            </ul>                        </div>                    </a>                </li>                <li class="delivery__item">                    <a href="" class="delivery__link">                        <h3 class="delivery__header"><span>S</span>hipping</h3>                        <div class="delivery__description">                            <p class="delivery__text">                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.                            </p>                            <p class="delivery__text  delivery__text--accent">                                Free shipping for PremiumBook                            </p>                        </div>                    </a>                </li>            </ul>            <a class="btn" href="">make your photobook</a>        </div>    </section>    <footer class="page-footer">        <div class="container">            <div class="page-footer__main">                <nav class="page-footer__navigation">                    <ul class="submenu">                        <li class="submenu__item"><a href="#!">About us</a></li>                        <li class="submenu__item"><a href="#!">Careers</a></li>                        <li class="submenu__item"><a href="#!">Help</a></li>                        <li class="submenu__item"><a href="#!">Press</a></li>                    </ul>                    <ul class="submenu">                        <li class="submenu__item"><a href="#!">Terms</a></li>                        <li class="submenu__item"><a href="#!">Payment</a></li>                        <li class="submenu__item"><a href="#!">Shipping</a></li>                        <li class="submenu__item"><a href="#!">Contact</a></li>                    </ul>                    <ul class="submenu">                        <li class="submenu__item"><a href="#!">LightBook</a></li>                        <li class="submenu__item"><a href="#!">ClassicBook</a></li>                        <li class="submenu__item"><a href="#!">PremiumBook</a></li>                    </ul>                </nav>                <div class="page-footer__additions">                    <ul class="socials__list  socials__list--custom">                        <li class="socials__item"><a href="#!" class="socials__link  socials__link--facebook" target="_blank" rel="noopener noreferrer">Facebook</a></li>                        <li class="socials__item"><a href="#!" class="socials__link  socials__link--vk" target="_blank" rel="noopener noreferrer">vk</a></li>                        <li class="socials__item"><a href="#!" class="socials__link  socials__link--instagram" target="_blank" rel="noopener noreferrer">instagram</a></li>                    </ul>                    <a href="#!" class="logo-author" target="_blank" rel="noopener noreferrer">                        <span>Designed by</span>                        <img src="img/logo-author.png" alt="logo-author">                    </a>                </div>            </div>            <div class="page-footer__copyright">&copy; 2015 Photobook. All rights reserved</div>        </div>    </footer>    <!-- Arrow to top -->    <a class="arrow-to-up" id="toUp" href="#">        <svg version="1.1" width="40" height="40" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100">            <polygon fill="#00FF00" points="0,100 50,0 100,100"/>        </svg>    </a>    <!-- end of Arrow to top -->    <script src="js/scripts.min.js"></script>    </body></html>
