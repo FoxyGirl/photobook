@@ -181,7 +181,7 @@ gulp.task('svg-clean', function () {
 gulp.task("copy", function() {
     return gulp.src([
         "fonts/*.*",
-        "img/*.*",
+        "img/**/*.*",
         "js/picturefill.min.js",
         "*.html"
     ], {
@@ -210,7 +210,7 @@ gulp.task("copy:img", function() {
     //     base: "."
     // })
     //     .pipe(gulp.dest("build"));
-    return gulp.src("build/img/**/*.{png,jpg,gif}")
+    return gulp.src("./img/**/*.{png,jpg,gif}")
         .pipe(imagemin([
             imagemin.optipng({optimizationLevel: 3}),
             imagemin.jpegtran({progressive: true})
