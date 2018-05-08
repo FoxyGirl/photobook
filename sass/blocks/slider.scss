@@ -31,10 +31,6 @@
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: 200;
-    cursor: pointer;
-    opacity: 1;
-    transition: opacity 0.8s;
-    will-change: opacity;
   }
 
 
@@ -83,6 +79,10 @@
     }
 
     .slider__arrow {
+      cursor: pointer;
+      opacity: 1;
+      transition: opacity 0.8s;
+      will-change: opacity;
 
       &::before,
       &::after {

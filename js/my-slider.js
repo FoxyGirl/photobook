@@ -5,7 +5,6 @@
 (function () {
     'use strict';
 
-    console.log('!!!');
     sliderArrow('profSlider');
 
     function sliderArrow(slideId) {
@@ -33,6 +32,11 @@
                 slideContent(isIE11, currentSlide);
             }
         }, false);
+
+        function initArrows(currentSlide) {
+            nextArrow.style.opacity = (currentSlide < sliderItems.length - 1) ? '1' : '0';
+            prevArrow.style.opacity = (currentSlide < 1) ? '0' : '1';
+        }
 
         function initArrows(currentSlide) {
             nextArrow.style.opacity = (currentSlide < sliderItems.length - 1) ? '1' : '0';
